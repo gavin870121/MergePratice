@@ -9,14 +9,14 @@ const gridLength = 200;
 $(function () {
     mapArray = [ //0-可走,1-障礙,2-終點,3-敵人
         [0, 1, 1, 0],
-        [0, 0, 1, 0],
-        [3, 0, 0, 3],
+        [0, 0, 1, 3],
+        [3, 0, 0, 0],
         [1, 1, 1, 2]
     ];
     ctx = $("#myCanvas")[0].getContext("2d");
     //只有canvas要指定位置，指定繪圖是2D
     imgMain = new Image();
-    imgMain.src = "images/spriteSheet.png";
+    imgMain.src = "/RPG/images/spriteSheet.png";
     
     currentImgMain = {
         "x": 0,
@@ -27,9 +27,9 @@ $(function () {
         ctx.drawImage(imgMain, 0, 0, 80, 130, currentImgMain.x, currentImgMain.y, gridLength, gridLength);
     }
     imgMountain = new Image();
-    imgMountain.src = "images/material.png";
+    imgMountain.src = "/RPG/images/material.png";
     imgEnemy = new Image();
-    imgEnemy.src = "images/Enemy.png";
+    imgEnemy.src = "/RPG/images/Enemy.png";
     imgMountain.onload = function () {
         imgEnemy.onload = function () {
             for (var x in mapArray) {
