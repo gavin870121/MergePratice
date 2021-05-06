@@ -7,15 +7,16 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="randomSelector/style.css">
 
     <title>Carousel Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="clubCourse/style.css">
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="RPG/style.css">
+
 </head>
 
 <body>
@@ -32,11 +33,15 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home </a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">RandomSelector<span class="sr-only">(current)</span></a>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="randomSelector.html">RandomSelector<span
+                                class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item ">
                         <a class="nav-link " href="clubCourse.html">ClubCourse</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link " href="#">MindTest</a>
                     </li>
                 </ul>
                 <form class="form-inline mt-2 mt-md-0">
@@ -50,20 +55,14 @@
     <main role="main">
         <div class="container marketing">
             <hr class="featurette-divider">
-            <h1>?</h1>
-            <input type="button" value="今天晚上吃什麼">
-            <ul id="choices">
-                <!-- <li title="randomSelector/ramen.png">拉麵</li>
-                <li title="randomSelector/rice.jpg">滷肉飯</li>
-                <li title="randomSelector/dumpling.jpg">水餃</li> -->
-                <!-- 用網址 -->
-                <li title="https://d20aeo683mqd6t.cloudfront.net/zh-hant/articles/title_images/000/038/935/medium/pixta_34301578_M.jpg">
-                    拉麵</li>
-                <li title="https://d3l76hx23vw40a.cloudfront.net/recipe/yqn093-027c.jpg">滷肉飯</li>
-                <li title="https://foodpicks.tw/wp-content/uploads/2019-11-03_114250-696x406.jpg">水餃</li>
-            </ul>
-            <img id="foodImg" width="200px">
-            <hr class="featurette-divider">
+            <h1>我要去右下角</h1>
+            <div>
+                <canvas id="myCanvas" width="800" height="800"></canvas>
+                <p id="talkBox"></p>
+                
+            </div>
+       
+
 
         </div><!-- /.container -->
 
@@ -86,7 +85,9 @@
     <script src="dist/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="assets/js/vendor/holder.min.js"></script>
-    <script src="randomSelector/main.js"></script>
+    <script src="RPG/main.js"></script>
+    
+
 </body>
 
 </html>
