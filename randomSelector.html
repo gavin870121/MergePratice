@@ -60,16 +60,16 @@
             <h1>?</h1>
             <input type="button" value="今天晚上吃什麼">
             <ul id="choices">
-                <!-- <li title="randomSelector/ramen.png">拉麵</li>
-                <li title="randomSelector/rice.jpg">滷肉飯</li>
-                <li title="randomSelector/dumpling.jpg">水餃</li> -->
+                <!-- <li id="choices" title="randomSelector/ramen.png">拉麵</li>
+                <li id="choices" title="randomSelector/rice.jpg">滷肉飯</li>
+                <li id="choices" title="randomSelector/dumpling.jpg">水餃</li> -->
                 <!-- 用網址 -->
-                <li title="https://d20aeo683mqd6t.cloudfront.net/zh-hant/articles/title_images/000/038/935/medium/pixta_34301578_M.jpg">
+                <li id="choices" title="https://d20aeo683mqd6t.cloudfront.net/zh-hant/articles/title_images/000/038/935/medium/pixta_34301578_M.jpg">
                     拉麵</li>
-                <li title="https://d3l76hx23vw40a.cloudfront.net/recipe/yqn093-027c.jpg">滷肉飯</li>
-                <li title="https://foodpicks.tw/wp-content/uploads/2019-11-03_114250-696x406.jpg">水餃</li>
+                <li title="https://d3l76hx23vw40a.cloudfront.net/recipe/yqn093-027c.jpg" id="choices">滷肉飯</li>
+                <li id="choices" title="https://foodpicks.tw/wp-content/uploads/2019-11-03_114250-696x406.jpg">水餃</li>
             </ul>
-            <img id="foodImg" width="200px" src="randomSelector/dumpling.jpg">
+            <img id="foodImg" width="200px" >
             <hr class="featurette-divider">
 
         </div><!-- /.container -->
@@ -93,6 +93,7 @@
     <script src="dist/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="assets/js/vendor/holder.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="randomSelector/main.js"></script>
 </body>
 
